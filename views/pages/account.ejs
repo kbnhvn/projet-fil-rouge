@@ -1,0 +1,55 @@
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
+    <main>
+        <div class="bg-light">
+            <style>
+                img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            </style>
+            <h1>Mon compte</h1>
+
+            <p>Mail:
+                <%= user.mail %>
+            </p>
+            <p>Nom:
+                <%= user.lastname %>
+            </p>
+            <p>Prénom:
+                <%= user.firstname %>
+            </p>
+            <p>Age:
+                <%= user.age %>
+            </p>
+            <p>Sexe:
+                <%= user.gender %>
+            </p>
+            <p>Ville:
+                <%= user.city %>
+            </p>
+
+
+
+
+            </p>
+
+        </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+
+</html>

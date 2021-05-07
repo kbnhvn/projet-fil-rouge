@@ -1,0 +1,46 @@
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
+    <main>
+        <div>
+            <style>
+                img,
+                input,
+                button {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 1em;
+                }
+                
+                h1 {
+                    text-align: center;
+                }
+            </style>
+
+            <img src="" alt="connexion" width="500" class="center">
+            <h1>Se connecter :</h1>
+            <form action="/account" method="POST">
+                <input type="mail" name="mail" placeholder="Mail" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Send</button></form>
+            <p>
+                <%= message %>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+
+</html>

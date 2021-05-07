@@ -1,0 +1,57 @@
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
+    <main>
+        <div>
+            <style>
+                img,
+                input,
+                button,
+                select {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 1em;
+                }
+                
+                h1 {
+                    text-align: center;
+                }
+            </style>
+
+            <img src="" alt="connexion" width="500" class="center">
+            <h1>S'inscrire :</h1>
+            <form action="/new-account" method="POST">
+                <input type="mail" name="mail" placeholder="Mail" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="password2" placeholder="Verify password" required>
+                <input type="text" name="firstname" placeholder="Prénom" required>
+                <input type="text" name="lastname" placeholder="Nom" required>
+                <select name="gender">
+                    <option value="sexe" >Sexe</option>
+                    <option value="Homme">Homme</option>
+                    <option value="Femme">Femme</option>
+                </select>
+                <input type="int" name="age" placeholder="Age" required>
+                <input type="text" name="city" placeholder="Ville" required>
+                <button type="submit">Send</button></form>
+            <p>
+                <%= message %>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+
+</html>
